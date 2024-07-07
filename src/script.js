@@ -1,17 +1,17 @@
+let timerId = null;
+
 function displayCountdown(number) {
-    const countdown = document.getElementById('countdown')
-    countdown.innerHTML =
-        parseInt(number) === 10 ? number : `0${parseInt(number)}`
+  const countdownElement = document.getElementById('countdown');
+  countdownElement.innerHTML = number < 10? `0${number}` : number;
 
-    const timer = setTimeout(
-        () =>
-            number === 0
-                ? displayCountdown(parseInt(10))
-                : displayCountdown(parseInt(number - 1)),
-        1000
-    )
-
-    return () => clearTimeout(timer)
+  if (number > 0) {
+    timerId = setTimeout(() => displayCountdown(number - 1), 1000);
+  }
 }
 
-displayCountdown(10)
+function resetCountdown() {
+  clearTimeout(timerId);
+  timerId = null;
+}
+
+displayCountdown(10);
