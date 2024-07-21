@@ -9,23 +9,24 @@
 html {
     background-color: #1a1919;
     color: #f2ebeb;
-    padding: clamp(16px, 10vw, 128px) 8px 8px 8px;
-    max-width: 300px;
+    padding: clamp(8px, 6vw, 64px) 8px 8px 8px;
     margin: auto;
 }
 
 h2 {
-    font-size: 64px;
+    font-size: min(16vw, 64px);
     line-height: 1;
 }
 
 h3 {
-    font-size: 96px;
+    font-size: min(21vw, 96px);
     line-height: 1;
 }
 
 img {
-    padding-bottom: 8px;
+    padding-bottom: min(1vw, 8px);
+    height: min(8vw, 24px);
+    width: min(8vw, 24px);
 }
 
 .align-end {
@@ -33,17 +34,17 @@ img {
 }
 
 .divider {
-    height: 16px;
+    height: min(4vw, 16px);
     background-color: rgb(234, 12, 12);
     width: 100%;
-    box-shadow: 0 20px 8px #1a1919, 0 -12px 8px #1a1919;
+    box-shadow: 0 min(6vw, 20px) 8px #1a1919, 0 max(-3vw, -12px) 8px #1a1919;
     z-index: 5;
 }
 
 .flex {
     display: flex;
     flex-direction: column;
-    margin-top: 32px;
+    max-width: 256px;
 }
 
 .flex-row {

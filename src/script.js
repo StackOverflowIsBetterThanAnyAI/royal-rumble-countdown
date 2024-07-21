@@ -1,13 +1,15 @@
 function displayCountdown(number) {
-    const countdown = document.getElementById('countdown')
-    countdown.innerHTML =
+    const countdownElements = document.getElementsByClassName('countdown-10')
+    const displayNumber =
         parseInt(number) === 10 ? number : `0${parseInt(number)}`
+
+    for (let i = 0; i < countdownElements.length; i++) {
+        countdownElements[i].innerHTML = displayNumber
+    }
 
     const timer = setTimeout(
         () =>
-            number === 0
-                ? displayCountdown(parseInt(10))
-                : displayCountdown(parseInt(number - 1)),
+            number === 0 ? displayCountdown(10) : displayCountdown(number - 1),
         1000
     )
 
