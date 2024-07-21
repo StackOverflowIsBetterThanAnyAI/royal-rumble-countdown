@@ -16,11 +16,16 @@ html {
     align-items: end;
 }
 
+.countdown {
+    width: max(5vw, 256px);
+}
+
 .flex {
     flex-wrap: wrap;
     display: flex;
     gap: min(4vw, 16px);
     justify-content: center;
+    align-items: center;
 }
 
 .flex-row {
@@ -34,6 +39,47 @@ html {
 
 .franklin {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* 1988 Countdown */
+
+#countdown1988 h3 {
+    color: rgb(224, 181, 24);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: min(21vw, 96px);
+    font-weight: 100;
+    -webkit-text-stroke-width: min(1vw, 4px);
+    -webkit-text-stroke-color: rgb(8, 8, 8);
+}
+
+/* 2019 Countdown */
+
+#countdown2019 h2 {
+    font-size: min(10vw, 40px);
+    line-height: 1;
+    text-shadow: 0px 0px 8px #030303;
+}
+
+#countdown2019 h3 {
+    font-size: min(21vw, 96px);
+    font-weight: 800;
+    line-height: 1;
+    padding-bottom: min(2vw, 12px);
+}
+
+#countdown2019 .divider {
+    height: min(4vw, 16px);
+    background-color: rgb(234, 12, 12);
+    margin: auto;
+    position: relative;
+    width: min(45vw, 256px);
+    z-index: 5;
+}
+
+#countdown2019 .dark-background {
+    background: #030303;
+    width: min(45vw, 256px);
+    margin: auto;
 }
 
 /* 2010 Countdown */
@@ -57,8 +103,9 @@ html {
 #countdown2010 .divider {
     height: min(4vw, 16px);
     background-color: rgb(234, 12, 12);
-    width: 100%;
     box-shadow: 0 min(6vw, 20px) 8px #1a1919, 0 max(-3vw, -12px) 8px #1a1919;
+    margin: auto;
     position: relative;
+    width: min(80vw, 256px);
     z-index: 5;
 }
