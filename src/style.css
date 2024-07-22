@@ -111,13 +111,13 @@ html {
     background-color: rgb(234, 12, 12);
     margin: auto;
     position: relative;
-    width: min(45vw, 256px);
+    width: min(45vw, 192px);
     z-index: 5;
 }
 
 #countdown2019 .dark-background {
     background: #030303;
-    width: min(45vw, 256px);
+    width: min(45vw, 192px);
     margin: auto;
 }
 
