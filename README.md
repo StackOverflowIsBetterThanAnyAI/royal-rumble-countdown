@@ -1,1 +1,3 @@
-A basic oldschool WWE Royal Rumble countdown animation.
+# Royal Rumble Countdown
+
+A set of oldschool WWE Royal Rumble countdown animations.
